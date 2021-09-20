@@ -1,3 +1,5 @@
+# Exercise # 1 - Hibernate HelloWorld
+
 1. Create new maven project.
 	- skip archetype selection
 	- group id: com.dci
