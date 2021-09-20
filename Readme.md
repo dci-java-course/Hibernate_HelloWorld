@@ -15,15 +15,15 @@
 
 4. Inside pom.xml add the hibernate-core dependency inside the <dependencies> tag :
 ```
-                  <dependency>
-  				<groupId>org.hibernate</groupId>
-  				<artifactId>hibernate-core</artifactId>
-  				<version>4.3.2.Final</version>
+               <dependency>
+  				 <groupId>org.hibernate</groupId>
+  				 <artifactId>hibernate-core</artifactId>
+  				 <version>4.3.2.Final</version>
   			</dependency>  
 ```
 Also add dependency for mysql java connector.
 ```
-              <dependency>
+               <dependency>
         		<groupId>mysql</groupId>
         		<artifactId>mysql-connector-java</artifactId>
         		<version>8.0.17</version>
