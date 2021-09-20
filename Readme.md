@@ -15,7 +15,7 @@
 
 4. Inside pom.xml add the hibernate-core dependency inside the <dependencies> tag :
 ```
-              <dependency>
+                  <dependency>
   				<groupId>org.hibernate</groupId>
   				<artifactId>hibernate-core</artifactId>
   				<version>4.3.2.Final</version>
