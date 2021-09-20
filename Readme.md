@@ -15,13 +15,13 @@
 
 4. Inside pom.xml add the hibernate-core dependency inside the <dependencies> tag :
 ```
-            <dependency>
+        <dependency>
   				<groupId>org.hibernate</groupId>
   				<artifactId>hibernate-core</artifactId>
   				<version>4.3.2.Final</version>
   			</dependency>  
 ```
-    Also add dependency for mysql java connector.
+Also add dependency for mysql java connector.
 ```
           <dependency>
         		<groupId>mysql</groupId>
@@ -60,13 +60,13 @@
 
 10. In hibernate.cfg.xml file  
 
-	 Comment this line :
+	Comment this line :
 ```
 <mapping resource="Message.hbm.xml"/>
 ```
-Uncomment this line :
+  Uncomment this line :
 ```
-	<mapping class="com.dci.hibernate.entity.Message"/>
+<mapping class="com.dci.hibernate.entity.Message"/>
 ```
 
 11. Run and verify that everything is fine.
