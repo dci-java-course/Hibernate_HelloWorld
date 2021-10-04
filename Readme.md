@@ -32,7 +32,7 @@ Also add dependency for mysql java connector.
     		</dependency>
 ```             
 
-5. Copy the file hibernate.cfg.xml provided inside the directory src/main/java
+5. Copy the file hibernate.cfg.xml provided inside the directory src/main/resources
 	- This is the hibernate configuration file.
 	- Change the username and password propeties to match with the credentials of your local mysql server.
 	- Using the hello-world.sql file provided, create the database 'hello-world' and table 'message'.
