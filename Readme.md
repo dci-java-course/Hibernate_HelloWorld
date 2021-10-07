@@ -1,5 +1,7 @@
 # Exercise # 1 - Hibernate HelloWorld
 
+Verify that you have PostgreSQL server (version > 9.6.25) and any sql client to connect to the PostgreSQL server pre-installed. If you don't have you can download the installer from Here. The installer includes the PostgreSQl server, pgAdmin: a graphical tool for managing and developing your databases.
+
 1. Create new maven project.
 	- skip archetype selection
 	- group id: com.dci
@@ -23,19 +25,24 @@
   				 <version>4.3.2.Final</version>
   			</dependency>  
 ```
-Also add dependency for mysql java connector.
+Also add dependency for PostgreSQL driver.
 ```
-               <dependency>
-        		<groupId>mysql</groupId>
-        		<artifactId>mysql-connector-java</artifactId>
-        		<version>8.0.17</version>
-    		</dependency>
+										<dependency>
+						<groupId>org.postgresql</groupId>
+						<artifactId>postgresql</artifactId>
+						<version>42.2.4</version>
+					</dependency>
 ```             
 
 5. Copy the file hibernate.cfg.xml provided inside the directory src/main/resources
 	- This is the hibernate configuration file.
-	- Change the username and password propeties to match with the credentials of your local mysql server.
-	- Using the hello-world.sql file provided, create the database 'hello-world' and table 'message'.
+	- Change the username and password propeties to match with the credentials of your local PostgreSQL server.
+	- Create a database named 'hello-world'. Using the hello-world.sql file provided, create the table 'message' inside the database 'hello-world'.
+
+	Additionally create a sequence named 'hibernate_sequence'
+	```
+	CREATE SEQUENCE hibernate_sequence START 1;
+	```
 
 
 6. Create a new package com.dci.hibernate.util and place HibernateUtil.java(provided) inside it.
