@@ -1,6 +1,6 @@
 # Exercise # 1 - Hibernate HelloWorld
 
-Verify that you have PostgreSQL server (version > 9.6.25) and any sql client to connect to the PostgreSQL server pre-installed. If you don't have you can download the installer from Here. The installer includes the PostgreSQl server, pgAdmin: a graphical tool for managing and developing your databases.
+Verify that you have PostgreSQL server (version > 9.6.25) and any sql client to connect to the PostgreSQL server pre-installed. If you don't have you can download the installer from [Here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). The installer includes the PostgreSQl server, pgAdmin: a graphical tool for managing and developing your databases.  
 
 1. Create new maven project.
 	- skip archetype selection
